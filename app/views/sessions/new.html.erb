@@ -1,0 +1,16 @@
+<%= form_with(url: sessions_path, local: true) do |form| %>
+
+  <div class="field">
+    <%= form.label :username_or_email%>
+    <%= form.text_field :username_or_email, required: true, placeholder:'Username or email' %>
+  </div>
+
+  <div class="field">
+    <%= form.label :password %>
+    <%= form.password_field :password, required: true %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
