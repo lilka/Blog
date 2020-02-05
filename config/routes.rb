@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :comments
   resources :users, only:[:new,:create]
   resources :posts
   resources :sessions, only:[:new, :create, :destroy]

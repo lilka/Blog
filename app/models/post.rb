@@ -4,4 +4,6 @@ class Post < ApplicationRecord
 
     has_one_attached :picture
     has_rich_text :rich_body
+    has_many :comments
+    
 end
